@@ -1,7 +1,22 @@
 body {
     background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
 }
 
 a:hover {
     cursor: pointer;
 }
+
+div.nav-container {
+    position: sticky;
+    background-color: powderblue;
+}
+
+nav  {
+    position: relative;
+    top: -2.5em;
+    z-index: 999;
+    
+
+}
+
