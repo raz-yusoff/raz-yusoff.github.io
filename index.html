@@ -1,9 +1,94 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My blog</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page lol lol lol.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div class="container">
+      <div class="row" style="background-color: #dfcfbe;">
+        <br>
+        <div class="col-xs-3"><img src="./media-files/heart-image.png" class="img-responsive" style="max-height: 100px;"></div>
+        <div class="col-xs-9 text-uppercase text-right">
+          <h1>Raz</h1>
+            <nav class="row">
+              <a class="col-xs-3">Nav 1</a>
+              <a class="col-xs-3">Nav 2</a>
+              <a class="col-xs-3">Nav 3</a>
+              <a class="col-xs-3">Nav 4</a>
+            </nav>
+        <br>
+        </div>
+      </div>
+      <!--
+      <div class="row">
+        <br>
+        <img class="col-xs-12" src="./media-files/1140x350"  class="img-fluid" style="height: 350px;">
+      </div>
+      -->
+
+      <div class="row">
+        
+          <h2 class="col-xs-12 text-uppercase">A little bit about me</h2>
+          <p class="col-xs-12">Hobbies include playing guitar and acting in small feature roles in movies and TV shows.</p>
+        
+      </div>
+      <div class="row">
+        
+        <h2 class="col-xs-12 text-uppercase">Portfolio</h2>
+      
+       </div>
+      <div class="row">
+        
+        <div class="col-xs-6">
+          <a href="https://raz-yusoff.github.io/blog/css-reltv-abslt-fixd.html">
+            <img src="./media-files/555x300" class="img-responsive">
+          </a>
+          <strong>What are the differences between relative, absolute, and fixed positioning?</strong>
+          <p><a href="https://raz-yusoff.github.io/blog/css-reltv-abslt-fixd.html">Link to project</a></p>
+        </div>
+        <div class="col-xs-6">
+          <a>
+            <img src="./media-files/guitar.jpg" class="img-responsive" data-toggle="modal" data-target="#project1">
+          </a>
+          <strong>MUSIC</strong> - Click on image to listen to some music
+          <p><a href="https://youtu.be/S9-KqLTyD2A" target="blank">Link to YouTube</a></p>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="./media-files/555x300"  class="img-responsive">
+          <strong>Project 3</strong>
+          <p><a href="http://github.com/">Link to project</a></p>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title text-uppercase" id="myModalLabel">Brian the Spaceman</h4>
+              </div>
+              <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/S9-KqLTyD2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  This was my first project in this class. I learned a lot about HTML and CSS.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
   </body>
 </html>
