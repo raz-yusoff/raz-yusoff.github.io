@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+  <body>
+    
+    <div class="container">
+      
+      <header class="row" style="background-color: #dfcfbe;">
+        <br>
+        <div class="col-xs-3"><img src="../media-files/heart-image.png" alt="I heart you" class="img-responsive" style="max-height: 100px;"></div>
+        <h1 class="col-xs-9 text-uppercase text-right">
+          Raz Yusoff
+        <br>
+        <br>
+        </h1>
+      </header>
+      <div class="nav-container">
+        <nav class="row text-right">
+          <a class="col-xs-2"></a>
+          <a href="https://raz-yusoff.github.io/" class="col-xs-2">HOME</a>
+          <a class="col-xs-2">Nav 2</a>
+          <a class="col-xs-2">Nav 3</a>
+          <a class="col-xs-2">Nav 4</a>
+          <a class="col-xs-2">Nav 5</a>
+        </nav>
+      </div>
+        <div class="row">
+            <h1 class="col-xs-12 text-uppercase">Non-technical Blog - JS Fundamentals</h1>
+            <div class="col-xs-12">
+
+                <h3>An analogy to describe the differences between HTML and CSS</h3>
+                <p>Imagine we lived in the matrix and you were visiting your local supermarket, notice how all the items have been laid out neatly and in an accessible manner, stacked on shelves, there are colourful signs and labels everywhere etc. Although the instruction on how to organise the layout and aesthetics of all the items can be included in the html document, it's best practice that that instruction on how to present the items to your eyes in coded in the stylesheet (usually as a css), and the actual as-yet-to-be dynamic contents are coded into the html document. The css stylesheet then targets those items and gives the matrix the instruction of how to present it to your virtual eyes and other senses in the matrix!</p>
+
+
+                <h3>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'. (But not those ones)</h3>
+                <p>The control flow is the order in which a code executes. By default that's just the order in which they've been coded, line by line. However this flow can be 'distrupted' by conditional statements (mostly in the form of functions) and loops, which can all be nested within one another. But fear not, once the funtion, conditional statement or loop is satisfied/resolved, the code continues to proceed along its default control flow.</p>
+                <p>To use an example process from everyday life... dressing up in the morning - everyone's usually got a set order in which they like to follow, such as: (1) put your undies on, (2) put your pants on, (3) put your shirt on, (4) walk out the door. But within that flow there could be set conditionals (functions and loops) that must be met before you can move from one item to the next, such as: under step (2) once you put your pants on, check yourself in the mirror and make sure it's tight and snug, if not tighten the jeans again and repeat until your 'tightness' conditions are met (this is analogous to a loop function). Once happy then move on to step (3).</p>
+                
+
+                <h3>Describe what the DOM is and an example of how you might interact with it</h3>
+                <p>The DOM stands for Document Object Model. I guess it's best explained by breaking it down word for word actually:</p>
+                <ol>
+                    <li>Document - is what we are interacting with (HTML, XML). Holds the static content of the web app</li>
+                    <li>Object - The document has been modelled into a js object, by taking the document elements and shoving it into a js object. Hence The 'document' keyword in javascript is of the datatype object. Technically any programming language, such as C++ or C#, can be used to target and interact with elements in the document, but most browser DOM's by default have laid out the standard framework for which js can target and interact with those items in a document. There is an innumerous number of predefined operators, or 'methods', in the DOM which makes this possible (more on this below)
+                        <p class="text-center"><code class="bg-primary">document = { object }</code></p>
+                    </li>
+                    <li>Model - the representation of the document elements in javascript. Think about it like this: the real content of the element <code class="bg-primary">&lt;p id="cool"&gt;Hi&lt;/p&gt;</code> is in the html code but not actually in the js code. But that element is represented or 'modelled' in the js code by model lines such as:
+                        <p class="text-center"><code class="bg-primary">Let greeting = document.getElementsById("cool")</code></p>
+                    <em>getElementsById, getElementsByClassName, getElementsByTagName</em> and <em>getElementsByName </em> are an examples of predefined DOM operators that can be used in js code to target elements in the document. Note though that they return 
+                        </li>
+                   
+                </ol>
+
+                <h3>Explain the difference between accessing data from arrays and objects</h3>
+                <p></p>
+
+                <h3>Explain what functions are and why they are useful</h3>
+                <p></p>
+
+            </div>
+        </div>
+        
+    
+    <br>
+    <br>
+    <br>
+    </div>
+  </body>
+</html>
