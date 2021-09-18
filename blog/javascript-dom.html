@@ -56,16 +56,42 @@
                     </li>
                     <li>Model - the representation of the document elements in javascript. Think about it like this: the real content of the element <code class="bg-primary">&lt;p id="cool"&gt;Hi&lt;/p&gt;</code> is in the html code but not actually in the js code. But that element is represented or 'modelled' in the js code by model lines such as:
                         <p class="text-center"><code class="bg-primary">Let greeting = document.getElementsById("cool")</code></p>
-                    <em>getElementsById, getElementsByClassName, getElementsByTagName</em> and <em>getElementsByName </em> are an examples of predefined DOM operators that can be used in js code to target elements in the document. Note though that they return 
-                        </li>
-                   
+                    <p><em>querySelector, querySelectorAll, getElementsById, getElementsByClassName, getElementsByTagName</em> and <em>getElementsByName</em> are common examples of predefined DOM methods that can be used in js code to target elements in the document. More on them below. </p>
+                    </li>
                 </ol>
 
+                <p>The DOM represents the document as nodes and objects; these nodes can be elements, attributes, text content, comments, document-related stuff, and various other things. HTML elements are at the end of a chain that starts with <em>Node</em> and continues with <em>Element</em> and <em>HTMLElement</em> before ending with a type (ie: <em>HTMLDivElement, HTMLHeadingElement, etc.</em>). The methods for manipulating HTML elements are introduced at some part of this chain.</p>
+                <p>For example, the object representing the HTML form element gets its name property from the HTMLFormElement interface but its className property from the HTMLElement interface. In both cases, the property you want is in that form object. In other words, you can target that element or node via different interfaces.</p>
+                <p>Common methods:</p>
+                <ol>
+                  <li><code class="bg-primary">document.querySelector('p.blue')</code> - returns an Element object representing the first element in the document that matches the specified set of CSS selectors, or null is returned if there are no matches. Find elements by tag name, ID, classes, or combining them e.g. 'p.blue'</li>
+                  <li><code class="bg-primary">document.querySelectorAll()</code> - non-live NodeList containing one Element object for each element that matches at least one of the specified selectors or an empty NodeList in case of no matches.<br>
+                  Nodelists look like arrays but they aren't. To convert we can use either of the following:<br>
+                  <img src="../media-files/convertNodelistArray1.PNG" class="img-responsive" alt="convert nodelist array first image">
+                  <br>
+                  <br>
+                  <img src="../media-files/convertNodelistArray2.PNG" class="img-responsive" alt="conver nodelist array second immage"></li>
+                  <li><code class="bg-primary">document.getElementById()</code> - parameter is the html element ID. Returns an Element object describing the DOM element object matching the specified ID, or null if no matching element was found in the document.</li>
+                  <li><code class="bg-primary">document.getElementsByClassName()</code> - returns an array-like object (nodelist) of all child elements which have all of the given class name(s).</li>
+                  <li><code class="bg-primary">document.getElementsByTagName()</code> - returns an HTMLCollection (also a nodelist) of elements with the given tag name.</li>
+                  <li><code class="bg-primary">document.getElementsByName()</code> - returns a NodeList Collection of elements with a given name attribute in the document.</li>
+                  
+                </ol>
+                
+                <p>Other useful aspects to note include Event listeners. Here's a good reference list of <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="blank">DOM events</a>. Example of an Event listener function:</p>
+                <img src="../media-files/eventListenerFunction.PNG" class="img-responsive" alt="event listener function">
+                 
+                
+                  
+                    
+                   
+                
+
                 <h3>Explain the difference between accessing data from arrays and objects</h3>
-                <p></p>
+                <p>Arrays are a list of indexed data (with count stating from 0). Objects are a list of data that are indexed by a keyword (properties).</p>
 
                 <h3>Explain what functions are and why they are useful</h3>
-                <p></p>
+                <p>Functions carry out procedural work with data that doesn't necessarily have to flow with the default control flow of the whole code. They can be initiated and resolved via conditionals or called on directly within the overall code document, with or without input parameters, as and when needed. They are useful because they can be used to process data for any purpose really, whether to actually process mathematical information or to trigger visibily interactive responses on a webpage.</p>
 
             </div>
         </div>
